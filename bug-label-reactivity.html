@@ -1,0 +1,16 @@
+<head>
+  <title>bug-label-reactivity</title>
+</head>
+
+<body>
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <h1>Hello World!</h1>
+  {{greeting}}
+  {{#autoForm schema="Schema"}}
+    {{> afQuickField name="field"}}
+  {{/autoForm}}
+  {{> quickForm schema="Schema"}}
+</template>
